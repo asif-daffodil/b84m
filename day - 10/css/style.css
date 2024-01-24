@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shohebul{
+    width: 300px;
+    height: 200px;
+    background: rgb(0, 100, 0);
+    margin: 20px;
+    position: relative;
+    z-index: -10;
+}
+
+.hasnat {
+    width: 300px;
+    height: 200px;
+    background: rgba(0, 0, 100, 0.8);
+    margin-left: 170px;
+    margin-top: -120px;
+    position: relative;
+}
+
+.jesika{
+    width: 300px;
+    height: 200px;
+    background: #E43D3077;
+    margin-left: 320px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+}
+
+.pori {
+    width: 450px;
+    height: 450px;
+    background: url("../images/hasnat-pori.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    line-height: 450px;
+    letter-spacing: 5px;
+    /* clip-path: polygon(0% 10%, 10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%); */
+    border-radius: 20px;
+    font-variant: small-caps;
+}
+
+.pori:hover{
+    background: url("../images/Shah-Rukh-Khan-2.jpeg");
+    background-size: calc(100% + 20px);
+    background-repeat: no-repeat;
+    background-position: center;
+}

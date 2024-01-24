@@ -1,0 +1,26 @@
+.ab {
+    color: hotpink;
+}
+
+.mytext {
+    color: cornflowerblue;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    text-align: center;
+    text-shadow: 2px 2px 2px aqua;
+    font-style: italic;
+    font-weight: bold;
+    font-family: arial;
+    text-decoration: underline;
+    line-height: 44px;
+    -webkit-text-stroke: 1px blue;
+    width: 900px;
+    border: 3px solid darkblue;
+    border-radius: 18px;
+    padding: 60px;
+    box-sizing: border-box;
+    margin: 200px auto;
+    box-shadow: -10px 10px 10px black;
+}

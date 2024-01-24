@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hasnat{
+    width: 600px;
+    /* border: 1px solid black; */
+    border-width: 10px;
+    border-style: double;
+    border-color: black;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.germany {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+.germany > .black {
+    width: 100%;
+    height: 33%;
+    background-color: black;
+}
+
+.germany > .red {
+    width: 100%;
+    height: 34%;
+    background-color: red;
+}
+
+.germany > .yellow {
+    width: 100%;
+    height: 33%;
+    background-color: yellow;
+}
