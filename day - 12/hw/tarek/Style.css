@@ -1,0 +1,20 @@
+.bd {
+    font-size: 70px;
+    letter-spacing: 7px;
+    font-family: Arial;
+    font-variant: small-caps;
+    -webkit-text-stroke: 3px red;
+    color: rgb(240, 216, 216);
+    font-weight:bolder;
+    text-shadow: 7px 7px 5px rgb(0, 70, 31);
+    font-style: italic;
+    padding: 25px;
+    width: max-content;
+    margin: auto;
+    border: 7px solid green;
+    box-shadow: 2px 2px 15px rgb(27, 87, 54) ,2px 2px 15px rgb(27, 87, 54) inset;
+    outline: 8px dashed green;
+    border-radius: 7px;
+    margin-top: 70px;
+    
+}

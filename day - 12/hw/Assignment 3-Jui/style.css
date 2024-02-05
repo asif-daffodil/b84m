@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bd {
+  color: white;
+  letter-spacing: 6px;
+  text-shadow: 3px 3px 3px black;
+  font-weight: bolder;
+  font-family: arial;
+  -webkit-text-stroke: 3px #f42a41;
+  width: max-content;
+  border: 6px solid #006a4e;
+  margin: auto;
+  padding: 25px;
+  outline: 6px dashed #006a4e;
+  font-size: 66px;
+  margin-top: 60px;
+  font-variant: small-caps;
+  font-style: italic;
+  border-radius: 8px;
+  box-shadow: 0 0 20px black, 0 0 18px black inset;
+}

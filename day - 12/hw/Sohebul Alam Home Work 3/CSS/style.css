@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divone {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px 30px;
+    font-size: 66px;
+    font-variant: small-caps;
+    letter-spacing: 7px;
+    -webkit-text-stroke: 3px dodgerblue;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px black;
+    font-style: italic;
+    width: max-content;
+    border: 6px solid dodgerblue;
+    outline: 6px dashed dodgerblue;
+    box-shadow: 0 0 20px black, 0 0 18px black inset;
+    border-radius: 10px;
+    font-family: arial;
+}

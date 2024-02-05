@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bangladesh
+    {
+    margin: auto;
+    padding: 25px;
+    width: max-content;
+    margin-top: 85px;
+    border: 90px solid rgba(35, 179, 67, 0.525);
+    outline: 8px dashed rgb(12, 215, 83);
+    border-radius: 14px;
+    box-shadow:8px 8px 8px black, 8px 8px 8px black inset;
+    font-size: 100px;
+    text-shadow: 10px 10px 10px 10px black;
+    font-variant: small-caps;
+    letter-spacing: 8px;
+    background-image: url(./hw-3.avif);
+    border-width: thick;
+
+}

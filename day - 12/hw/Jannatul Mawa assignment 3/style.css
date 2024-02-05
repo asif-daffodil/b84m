@@ -1,0 +1,21 @@
+.BD {
+    border: 10px dashed rgb(16, 160, 218);
+    border-radius: 35px;
+    width: 600px;
+    padding: 60px;
+    box-sizing: 50px border-box;
+    box-shadow: -10px 10px 10px rgb(6, 95, 110);
+    margin: auto;
+    line-height: 44px;
+    font-size: 80px;
+    font-style: arial;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(55, 87, 192);
+    text-align: center;
+    text-decoration: solid;
+    text-shadow: 10px 10px 10px rgb(121, 167, 209);
+    text-transform: uppercase;
+    -webkit-text-stroke-color: rgba(194, 206, 221, 0.404);
+    background-color: rgb(231, 250, 223);
+    }

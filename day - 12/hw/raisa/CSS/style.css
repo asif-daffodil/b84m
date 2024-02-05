@@ -1,0 +1,23 @@
+.mytext {
+    color: white;
+    font-size: 90px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: "Lucida Handwriting";
+    text-align: center;
+    -webkit-text-stroke: 3px rgb(90, 7, 25);
+    text-shadow: 5px 5px 5px rgb(129, 7, 23);
+    line-height: 40px;
+    border: 10px solid rgb(7, 9, 43);
+    border-radius: 16px;
+    outline: dashed;
+    outline-color: rgb(7, 9, 43);
+    outline-width: 8px;
+    padding: 45px;
+    box-sizing: border-box;
+    width: 670px;
+    margin: 200px auto;
+    box-shadow: 4px 4px 18px rgb(13, 14, 29), 4px 4px 18px rgb(13, 14, 29) inset;
+}
