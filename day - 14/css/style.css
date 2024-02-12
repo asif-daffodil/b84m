@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, #000, #00f, #fff, #00f, #000);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main > div {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#fff, #f00, #00f, #fff);
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.main > div:first-child:hover {
+    transform: translate(20px, 20px);
+}
+
+.main > div:nth-child(2):hover {
+    transform: scale(0.9);
+}
+
+.main > div:nth-child(3):hover {
+    transform: skew(20deg);
+}
+
+.main > div:nth-child(4):hover {
+    transform: rotate(360deg);
+}
+
+.main > div:nth-child(5):hover {
+    transform: translate(40px, -20px) scale(0.9) skew(-20deg) rotate(-45deg);
+}
+
+.main > div:last-child:hover {
+    transform: matrix(40, 20, );
+}
