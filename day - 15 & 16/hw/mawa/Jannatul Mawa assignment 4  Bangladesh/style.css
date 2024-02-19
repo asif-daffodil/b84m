@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background: linear-gradient(51deg, rgb(0, 0, 0) 0%, rgb(129, 2, 2) 50%, rgb(0, 0, 0) 100%);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+.content{
+    margin: 60px auto;
+    width: max-content;
+    height: max-content;
+    font-size: 100px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-style: italic;
+    background: url("https://source.unsplash.com/1600x900/?people"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 16px solid transparent;
+    border-image: url("https://source.unsplash.com/1600x900/?Bangladesh") 12 round;
+    clip-path: polygon(0 9%, 3% 9%, 3% 0, 97% 0, 97% 9%, 100% 9%, 100% 90%, 97% 90%, 97% 100%, 3% 99%, 3% 91%, 0 91%);
+}

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url("https://source.unsplash.com/1600x900/?Bangladesh");
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.main:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+}
+
+.flag{
+    width: 300px;
+    height: 200px;
+    background: green;
+    display: grid;
+    place-items: center;
+    position: relative;
+    border: 3px solid rgb(37, 37, 37);
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 0 20px rgb(29, 29, 29) inset;
+    z-index: 11;
+}
+
+.center{
+    width: 120px;
+    height: 120px;
+    background: red;
+    border: 1px solid rgb(190, 9, 9);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(112, 17, 17) inset;
+}
+
+.flag::before {
+    content: "BANGLADESH";
+    color: rgb(66, 65, 65);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    line-height: 40px;
+    background: rgb(255, 255, 255, 0.6);
+    text-align: center;
+    border: 3px solid rgb(37, 37, 37);
+    border-radius: 0 0 6px 6px;
+    left: -3px;
+    box-shadow: 0 0 15px rgb(29, 29, 29) inset;
+}
+
+.flag:hover {
+    background: white;
+}
+.flag:hover::before{
+    content: "JAPAN";
+}
+

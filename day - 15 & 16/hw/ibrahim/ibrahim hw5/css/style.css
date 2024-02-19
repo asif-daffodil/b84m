@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    background: url(https://shorturl.at/xGMS5);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+.main
+{
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    font-size: 80px;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;
+    -webkit-text-stroke: 1px skyblue;
+    margin: 20px auto;
+    padding:40px;
+    color: transparent;
+    border: 20px solid;
+    border-image: url(https://shorturl.at/pGJ34) 20 round;
+    background: url(https://shorturl.at/pGJ34);
+    background-clip: text;
+    -webkit-background-clip: text;
+    clip-path: polygon(0px 20px, 20px 20px, 20px 0px, calc(100% - 20px) 0px,  calc(100% - 20px) 20px, calc(100% - 0px) 20px, calc(100% - 0px) calc(100% - 20px), calc(100% - 20px) calc(100% - 20px), calc(100% - 20px) calc(100% - 0px), 20px calc(100% - 0px), 20px calc(100% - 20px), 0px calc(100% - 20px));
+
+}

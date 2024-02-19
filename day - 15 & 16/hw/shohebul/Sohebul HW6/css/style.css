@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+    animation: pulse 5s infinite;
+    transition: 0.4s all ease;
+}
+
+@keyframes pulse {
+    0% {
+      background-color: #efefef;
+    }
+    50% {
+      background-color: #b3b3b3;
+    }
+    100% { 
+        background-color: #efefef}
+  }
+
+.main {
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 60px;
+}
+
+.colum1 {
+    width: 25%;
+    overflow: hidden;
+}
+.colum2 {
+    width: 25%;
+    overflow: hidden;
+}
+.colum3 {
+    width: 25%;
+    overflow: hidden;
+}
+.colum4 {
+    width: 25%;
+    overflow: hidden;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .05);
+}
+
+.animi:hover {
+    opacity: 0.5;
+    transition: 0.4s all ease;
+}
+
+.animi {
+    animation: pulse1 5s linear;
+}
+
+@keyframes pulse1 {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% { 
+        opacity: 1;
+  }
+}
+
+.items > .animi >img {
+    max-width: 100%;
+}
+
+
+.items > p {
+    padding: 10px 15px 25px;
+    color: #515151;
+    font-size: 16px;
+    line-height: 18px;
+}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(25deg, rgba(77,207,92,1) 0%, rgba(196,78,14,1) 50%, rgba(247,79,193,1) 100%);
+    position: fixed;
+}
+
+.content{
+    font-size: calc(100vw / 12);
+    background-image: url(https://source.unsplash.com/1280x720/?nature,bangladesh);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: max-content;
+    height: max-content;
+    color: transparent !important;
+    background-attachment: fixed;
+    margin: 50px auto;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-variant: small-caps;
+    -webkit-background-clip: text;
+	background-clip: text;
+    background-color:#FFFFFF;
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image: url(https://source.unsplash.com/1280x720/?nature,bangladesh) 12 round;
+    font-style: italic;
+    padding: 5px 40px;
+    clip-path: polygon(0 4%, 1% 4%, 1% 0%, 99% 0%, 99% 4%, 100% 4%, 100% 95%, 99% 95%, 99% 100%, 1% 100%, 1% 96%, 0% 96%);
+
+}

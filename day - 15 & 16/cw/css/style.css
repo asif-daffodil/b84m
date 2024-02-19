@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nsda {
+    width: 750px;
+    margin: 20px auto;
+    background: #000;
+    list-style: none;
+    display: flex;
+}
+
+.nsda li {
+    width: 100%;
+    position: relative;
+}
+
+.nsda li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s;
+}
+
+.nsda li::before {
+    content: "";
+    background: linear-gradient(to top right, #ff105f, #ffad06);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 6px;
+    transition: 0.5s;
+    transform: translateX(-50%);
+}
+
+.nsda li:hover::before {
+    width: 100%;
+}
+
+.nsda li:hover > a {
+    font-size: 20px;
+}
+
+.snav {
+    position: absolute;
+    list-style: none;
+    background: #000;
+    width: calc(100% + 40px);
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.nsda li:hover .snav {
+    top: 100%;
+    visibility: visible;
+}
+
+.snav2, .snav3 {
+    position: absolute;
+    top: 0;
+    left: 130%;
+    list-style: none;
+    background: #000;
+    width: 100%;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.snav > li:hover > .snav2 {
+    visibility: visible;
+    left: 100%;
+}
+
+.snav2 > li:hover > .snav3 {
+    visibility: visible;
+    left: 100%;
+}
+

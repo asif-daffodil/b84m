@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, rgb(221, 219, 219), white, rgb(196, 196, 196));
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    position: absolute;
+}
+
+.container {
+    background-image: url(Tree.webp);
+    width: 375px;
+    height: 220px;
+
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 0 10px inset;
+
+    clip-path: polygon(0 5%, 4% 5%, 4% 0, 96% 0, 96% 5%, 100% 5%, 100% 96%, 96% 96%, 96% 100%, 4% 100%, 4% 96%, 0 96%);
+}
+
+.box {
+
+    margin-top: 1.4px;
+    background: linear-gradient(to top right, rgb(233, 232, 232), white, rgb(221, 219, 219));
+    width: 347px;
+    height: 199.5px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+.content {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    box-sizing: border-box;
+    font-style: italic;
+    font-variant: small-caps;
+    font-family: serif;
+    font-size: 55px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    background: url("Tree.webp");
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: 2px rgb(77, 9, 9);
+
+}

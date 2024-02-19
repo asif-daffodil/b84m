@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: silver;
+    padding: 10px 20px;
+}
+.colum1
+{
+    width: min-content;
+}
+.colum2
+{
+    width: min-content;
+}
+.colum3
+{
+    width: min-content;
+}
+.colum4
+{
+    width: min-content;
+}
+.text
+{
+    padding:20px;
+    text-align: left;
+}
+.item
+{
+    background: white;
+    border-radius: 10px;
+    margin: 30px;
+}
+img{
+    border-radius: 10px 10px 0 0;
+}
+.item:hover
+{
+    background: gray;
+}
+img:hover
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: blur(2px); 
+}

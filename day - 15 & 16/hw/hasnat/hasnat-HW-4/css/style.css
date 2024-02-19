@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right,black,white,black);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+.bangladesh {
+    border: transparent 16px solid;
+    clip-path: polygon(0 7%, 2% 7%, 2% 0, 98% 0, 98% 7%, 100% 7%, 115% 92%, 98% 93%, 98% 99%, 2% 99%, 2% 93%, 0 93%);
+    border-image: url(./flowers-276014_640.jpg) 16 round;
+    background: url(./flowers-276014_640.jpg);
+    width: max-content;
+    height: max-content;
+    padding-top:25px ;
+    padding-bottom:25px ;
+    padding-left:35px ;
+    padding-right:35px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic ;
+    font-variant: small-caps;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 125px;
+}
