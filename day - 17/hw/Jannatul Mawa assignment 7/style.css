@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(209, 194, 223);
+    
+}
+
+.apple{
+    background-color: rgb(48, 46, 46);
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+}
+
+.logo {
+    color: rgb(226, 20, 133);
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+.apple ul {
+     list-style: none;
+     display: flex;
+}
+
+.apple ul li{
+    padding: 10px 30px;
+    position: relative;
+
+}
+
+.apple ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #e486b5;
+    visibility: hidden;
+}
+
+.apple ul li:hover::before {
+    visibility: visible;
+}
+
+.apple ul li a{
+    color: rgb(194, 23, 123);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.apple ul li a:hover {
+    color: rgb(241, 165, 222);
+
+}
+
+.fruits{
+    visibility: hidden;
+    position: absolute;
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 100%;
+    background-color: rgb(236, 157, 190);
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.apple ul li:hover .fruits {
+    visibility: visible;
+}
+
+.tree{
+    background-color: rgb(140, 238, 205);
+    visibility: hidden;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 120%;  
+    display: flex;
+    flex-direction: column;  
+}
+.fruits li:hover .tree {
+    visibility: visible;
+}
+
+.leaf{
+    position: fixed;
+    width: 100vw;
+    height: 250px;
+    left: 0;
+    top: 80px;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+    visibility: hidden;
+}
+
+.leaf li {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.leaf li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.apple ul li:hover .leaf {
+    visibility: visible;
+}
+.leaf li:hover::before {
+    visibility: hidden !important;
+}

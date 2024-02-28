@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+}
+
+.logo {
+    color: rgb(68, 152, 248);
+    font-size: 45px;
+    font-style: italic;
+    font-family: 'Brush Script M7';
+    font-weight: bolder;
+    padding: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.menu ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.menu ul li a:hover {
+    color: rgb(68, 152, 248);
+    font-size: 21px;
+}
+
+.drop1 {
+    display: block;
+    list-style: none;
+    position: absolute;
+    background: black;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    visibility: hidden;
+
+}
+
+.drop1 ul {
+    display: block;
+    margin: 10px;
+
+}
+
+.drop1 ul li {
+    width: 150px;
+    padding: 10px;
+
+}
+
+.menu li:hover .drop1 {
+    top: 155%;
+    visibility: visible;
+}
+
+.down {
+    position: absolute;
+    list-style: none;
+    background: black;
+    width: calc(100% + 30px);
+    top: 100%;
+    left: 160%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    visibility: hidden;
+    margin-left: 15px;
+}
+
+.drop1 li:hover .down {
+    top: 0;
+    left: 160%;
+    visibility: visible;
+}
+
+
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+
+}
+
+.drop2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.i1 {
+    border: solid rgb(238, 210, 210) 3px;
+    margin: 10px;
+    
+}
+
+.i2 {
+    border: solid rgb(250, 166, 97);
+    margin: 10px;
+}
+
+.i3 {
+    border: solid rgb(163, 158, 158);
+    margin: 10px;
+}
+
+.menu li:hover .drop2 {
+    top: 120%;
+    left: 50%;
+    display: block;
+    visibility: visible;
+}

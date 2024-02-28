@@ -1,0 +1,14 @@
+SELECT * FROM users;
+SELECT name, email FROM users;
+SELECT * FROM users WHERE id = 1;
+SELECT * FROM users WHERE name = 'Mostak Sir';
+SELECT * FROM users WHERE id = 1 AND age < 70;
+SELECT * FROM users WHERE id = 1 or age < 50;
+SELECT * FROM users WHERE id = 1 or NOT age = 50;
+SELECT * FROM users WHERE id = 1 AND (name = 'Mostak Sir' OR gender = 'Female');
+
+INSERT INTO users (name, email, mobile, gender, photo, age) VALUES ('Tisha', 'tisha@gmail.com', '01812121212', 'Female', 'photos/tisha.jpg', 18), ('Sohebul', 'sohebul@gmail.com', '01912121212', 'Male', 'photos/sohebul.jpg', 35), ('Priyanka', 'priyanka@gmail.com', '01112121212', 'Female', 'photos/priyanka.jpg', 20), ('Raisa', 'raisa@gmail.com', '01312121212', 'Female', 'photos/raisa.jpg', 18);
+
+SELECT * FROM users WHERE mobile IS NULL;
+SELECT * FROM users WHERE age IS NOT NULL;
+INSERT INTO users (name, email) VALUES ('Jul', 'jui@gmail.com');

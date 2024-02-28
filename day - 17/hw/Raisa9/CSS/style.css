@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 40px 10px 10px 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #d7d7d7;
+    background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
+    background: black;
+}
+
+.box img {
+    width: 100%;
+    transition: all linear 0.7s;
+}
+
+img.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.box:hover img {
+    opacity: 0;
+}
+
+.box:hover img.hover-img {
+    opacity: 1;
+}
+
+.one:hover img.hover-img {
+    transform: rotateY(180deg);
+}
+
+.two:hover img.hover-img {
+    transform: skew(180deg);
+}
+
+.three:hover img.hover-img {
+    transform: rotateX(360deg);
+}
+
+.four:hover img.hover-img {
+    transform: rotate(360deg);
+}
+
+.stamp {
+    width: 60px;
+    height: 60px;
+    background: rgb(134, 15, 15);
+    border-radius: 50%;
+    border: 1px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+.content {
+    width: 100%;
+    height: max-content;
+    background: #e9e9e9;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 60px;
+
+}
+.logo {
+    width: 200px;
+    height: 100px;
+    padding: 5px 0 0 0;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav ul { 
+    width: 750px;
+    list-style: none;
+    display: flex;
+    background: #e9e9e9;
+}
+.nav ul li {
+    width: 100%;
+    position: relative;
+}
+.nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3.5;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    color: #000;
+}
+
+.nav ul li::before { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(to top right, #ff4d07 0%, #e69d49);
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.nav ul li:hover::before {
+    width: 100%;
+}
+
+.nav ul li:hover > a {
+    color: #ff4d07;
+    font-size: 16.5px;
+}
+
+.snav {
+    position: absolute;
+    flex-direction: column;
+    width: calc(100% + 30px)!important;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.nav ul li:hover .snav {
+    visibility: visible;
+    top: 100%;
+}
+
+.snav2 {
+    position: absolute;
+    flex-direction: column;
+    width: calc(100% + 30px)!important;
+    top: 0;
+    left: 120%;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.snav li:hover .snav2 {
+    visibility: visible;
+    left: 100%;
+}
+
+.meganav {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px !important;
+    width: 100vw !important;
+    height: 250px;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    padding: 20px;
+    background: lightgrey;
+    border: 3px solid #fff;
+    transition: all 0.5s ease;
+    transform: translateY(15px);
+}
+
+.meganav > .images {
+    overflow: hidden;
+}
+
+
+.meganav > .images img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav ul li:hover .meganav {
+    visibility: visible;
+    transform: translateY(0px);
+}
