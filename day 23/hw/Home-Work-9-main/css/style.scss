@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-weight: 500;
+}
+
+.header {
+    padding: 50px 0;
+
+    .logo {
+        a {
+            text-decoration: none;
+
+            p {
+                line-height: 36px;
+                font-size: 24px;
+                padding-top: 10px;
+            }
+        }
+
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+        li {
+            list-style: none;
+            margin: 0 2px;
+            padding: 10px 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+}
+
+.hero {
+    h1 {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 70px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        background: #E02C6D;
+        color: white;
+        padding: 10px 24px;
+        text-decoration: none;
+
+        i {
+            color: white;
+        }
+    }
+
+    .heroimg {
+        background: url(../images/Group\ 33091.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 90%;
+            height: 90%;
+        }
+
+    }
+}
+
+.branding {
+    .brand-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 90%;
+        }
+    }
+}
+
+.rattings {
+    i {
+        color: gold;
+
+        &:last-child {
+            color: transparent;
+            inset: 5px;
+            background: linear-gradient(90deg, gold, transparent);
+            background-clip: text;
+        }
+    }
+
+}
+
+.featured {
+    a {
+        background: #E02C6D;
+        color: beige;
+        font-weight: bolder;
+        text-decoration: none;
+        padding: 10px 20px;
+
+        i {
+            color: beige;
+        }
+    }
+}
+
+.footer {
+    background: #0a0826;
+    padding: 60px 0;
+
+    .logo {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: beige;
+
+        }
+
+        p {
+            color: azure;
+        }
+
+        .footer-social {
+            i {
+                color: white;
+                font-size: 18px;
+                background: #1d1b3d;
+                border-radius: 50%;
+                height: 36px;
+                width: 36px;
+                line-height: 36px;
+                text-align: center;
+            }
+        }
+    }
+}

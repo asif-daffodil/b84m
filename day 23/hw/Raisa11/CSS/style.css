@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo img{
+    max-width: 300px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.navmenu{
+    display: flex;   
+}
+
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color:rgba(212, 7, 58, 0.884)
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:rgba(212, 7, 58, 0.884)
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.main-home{
+    padding: 5% 10%;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-text h5{
+    color: #2c2c2c;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    padding-top: 70px;
+}
+
+.main-text h1{
+    color: #2c2c2c;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 6px 0 10px;
+    width: 480px;
+}
+
+.button{
+    width: 200px;
+    height: 40px;
+    background: rgba(212, 7, 58, 0.884);
+    color: #2c2c2c;
+    border-radius: 20px;
+}
+
+.button a{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 550;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding:auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.button2 a{
+    color: rgb(211, 17, 108);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 550;
+    font-style: italic;
+    margin-bottom: 20px;
+
+}
+
+.button2{
+    text-align: right;
+    padding-right: 85px;
+
+}
+
+.cam{
+    position: absolute;
+    width: 350px;
+    top: 50px;
+    right: 20%;
+    z-index: 1000;
+    display: flex;
+    padding: 20px 10%;
+    padding-top: 60px;
+
+}
+.cam-bg{
+    position: absolute;
+    width: 350px;
+    top: 50px;
+    right: 10%;
+    z-index: 1000;
+    display: flex;
+    padding-top: 50px;
+}
+
+.mid-logo{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 550px 10%;
+}
+
+.sec{
+    padding: 50px 5%;
+}
+
+.products .card{
+    width: 310px;
+    height: 390px;
+    background: #fdfdfd;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6, 0.5);
+    border-radius: 5px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px #8b8a8a;
+}
+
+.products .card img{
+    height: 250px;
+    width: 94%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.products .card .desc{
+    padding: 5px 20px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.products .card .price{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 1px 20px;
+}
+
+.products .card .rate{
+    font-weight: 900;
+    font-size: 10px;
+    padding: 1px 20px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.phead{
+    text-align: center; 
+    font-size: 20px;
+    margin-top: 80px;  
+}
+
+
+.end{
+    width: 100%;
+    height: 100vh;
+}
+
+.endpic > div{
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+
+}
+
+.endpic{
+    width: 100%;
+    z-index: 1000;
+    padding: 50px;
+
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.endnote{
+    padding-top: 70px;
+    padding-right: 80px;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.endlogo img{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.ending{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+}
+
+.ending img{
+    padding: 55px;
+    padding-left: 500px;
+}
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+        
+        
+    }
+}
+
+@media(max-width:890px){
+    .camera{
+        top: 100%;
+        width: 300px;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .42s;
+
+    }
+}
+
+@media(max-width:890px){
+    .main-home{
+        padding: 20px 3%;
+        transition: .4s;
+        padding-top: 400px ;
+    }
+}
+
+@media(max-width:630px){
+    .main-text h1{
+        font-size: 12px;
+        transition: .4s;
+    }
+    .main-text h5{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-btn{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu open{
+        right: 0;
+    }
+}
+
+@media(max-width:700px){
+    .bottom{
+        top: 100%;
+        width: 300px;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .42s;
+    }
+
+}
+
+@media(max-width:700px){
+    .end{
+        top: 100%;
+        width: 300px;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .42s;
+    }
+}
+
+@media(max-width:690px){
+    .mid-logo{
+        transition: .4s;
+        padding-top: 900px ;
+    }
+}
+

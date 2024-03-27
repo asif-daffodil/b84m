@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg : #3ff;
+
+@mixin commonDiv ($w : 100px, $h : 100px) {
+    background-color: $bg;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: $w;
+    height: $h;
+}
+
+.divNo1{
+    @include commonDiv(300px, 150px);
+}
+
+.divNo2{
+    @include commonDiv(200px, 100px);
+}
+
+.divNo3{
+    @include commonDiv();
+}
+
+.dada {
+    width: 300px;
+    height: 300px;
+    background: #000;
+    display: flex;
+    margin: 20px;
+
+    >.baba{
+        width: 90%;
+        height: 90%;
+        background: #fff;
+        margin: auto;
+        display: flex;
+
+        >.ami {
+            width: 80%;
+            height: 80%;
+            background: #000;
+            margin: auto;
+            display: flex;
+
+            >.child {
+                width: 80%;
+                height: 80%;
+                background: #fff;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.divNo4 {
+    @extend .divNo1;
+    background-color: #f00;
+
+    &:hover {
+        background-color: #0f0;
+    }
+}
+
+
+
